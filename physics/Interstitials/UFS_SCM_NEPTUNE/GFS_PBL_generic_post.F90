@@ -450,7 +450,7 @@
         end if
       end if
 
-      if (cplaqm .or. cplchm) then
+      if (cplaqm .or. cplcat) then
         do i = 1, im
           if (oceanfrac(i) > zero) then
             if (.not.cplflx) then
