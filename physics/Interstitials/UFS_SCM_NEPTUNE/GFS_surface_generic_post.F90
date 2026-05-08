@@ -205,7 +205,7 @@
           enddo
         endif
 
-        if (cplaqm .and. .not.cplflx) then
+        if ((cplaqm .and. .not.cplflx) .or. cplchm) then
           do i=1,im
             t2mi_cpl    (i) = t2m(i)
             q2mi_cpl    (i) = q2m(i)
