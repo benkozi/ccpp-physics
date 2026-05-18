@@ -13,7 +13,7 @@
         tend_opt_pbl, trans_aero, ntchs, ntchm, ntccn, nthl, nthnc, ntgv, nthv, ntrz, ntgz, nthz,                                            &
         imp_physics, imp_physics_gfdl, imp_physics_thompson, imp_physics_wsm6, imp_physics_mg,          &
         imp_physics_fer_hires, imp_physics_nssl, nssl_ccn_on, ltaerosol, mraerosol, nssl_hail_on, nssl_3moment,                &
-        cplflx, cplaqm, cplchm, lssav, flag_for_pbl_generic_tend, ldiag3d, lsidea, hybedmf, do_shoc, satmedmf,                 &
+        cplflx, cplaqm, cplchm, cplcat, lssav, flag_for_pbl_generic_tend, ldiag3d, lsidea, hybedmf, do_shoc, satmedmf,                 &
         shinhong, do_ysu, dvdftra, ten_t, ten_u, ten_v, ten_q, dusfc1, dvsfc1, dtsfc1, dqsfc1, dtf, dtp, dudt, dvdt, dtdt,                   &
         dqdt, dusfc_cpl, dvsfc_cpl, dtsfc_cpl, dtend, dtidx, index_of_temperature, index_of_x_wind, index_of_y_wind,           &
         index_of_process_pbl, dqsfc_cpl, dusfci_cpl, dvsfci_cpl, dtsfci_cpl, dqsfci_cpl, dusfc_diag, dvsfc_diag, dtsfc_diag,   &
@@ -38,7 +38,7 @@
       integer, intent(in) :: imp_physics_mg, imp_physics_fer_hires
       integer, intent(in) :: imp_physics_nssl
       logical, intent(in) :: nssl_ccn_on, nssl_hail_on, nssl_3moment
-      logical, intent(in) :: ltaerosol, cplflx, cplaqm, cplchm, lssav, ldiag3d, lsidea, use_med_flux, mraerosol
+      logical, intent(in) :: ltaerosol, cplflx, cplaqm, cplchm, cplcat, lssav, ldiag3d, lsidea, use_med_flux, mraerosol
       logical, intent(in) :: hybedmf, do_shoc, satmedmf, shinhong, do_ysu
 
       logical, intent(in) :: flag_for_pbl_generic_tend      
