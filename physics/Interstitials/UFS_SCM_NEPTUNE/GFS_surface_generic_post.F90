@@ -117,14 +117,14 @@
           v1(i)     = vgrs_1(i)
         enddo
 
-        if (cplflx .or. cplchm .or. cplwav .or. cpl_fire) then
+        if (cplflx .or. cplchm .or. cplcat .or. cplwav .or. cpl_fire) then
           do i=1,im
             u10mi_cpl(i) = u10m(i)
             v10mi_cpl(i) = v10m(i)
           enddo
         endif
 
-        if (cplflx .or. cplchm .or. cpllnd) then
+        if (cplflx .or. cplchm .or. cplcat .or. cpllnd) then
           do i=1,im
             tsfci_cpl(i) = tsfc(i)
           enddo
